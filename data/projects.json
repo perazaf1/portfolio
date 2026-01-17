@@ -2,8 +2,14 @@
   "projects": [
     {
       "id": 1,
-      "titre": "Dormquest",
-      "description": "Site web réalisé dans le cadre académique : le but est de permettre aux étudiants de trouver leur logements de la manière la plus simple possible ! <br> 120h de travail encadrées <br> 50h de travail personnel",
+      "titre": {
+        "fr": "Dormquest",
+        "en":"Dormquest"
+      },
+      "description": {
+        "fr":"Site web réalisé dans le cadre académique : le but est de permettre aux étudiants de trouver leur logements de la manière la plus simple possible ! <br> 120h de travail encadrées <br> 50h de travail personnel",
+        "en":"Website created in an academic setting: the goal is to enable students to find housing as easily as possible! <br> 120 hours of supervised work <br> 50 hours of independent work"
+      },
       "competences": ["HTML", "CSS", "JavaScript", "PHP","SQL"],
       "media": {
         "type": "image",
@@ -15,8 +21,14 @@
     },
     {
       "id": 2,
-      "titre": "AthletIQ",
-      "description": "Projet d'analyse de mes données Garmin Connect, de natation, course à pied, musculation et de vélo. <br> Utilisation des librairies Pandas, Streamlit, Matplotlib... ",
+      "titre": {
+        "fr":"AthletIQ",
+        "en":"AthletIQ"
+    },
+      "description": {
+        "fr":"Projet d'analyse de mes données Garmin Connect, de natation, course à pied, musculation et de vélo. <br> Utilisation des librairies Pandas, Streamlit, Matplotlib... ",
+        "en":"Project to analyze my Garmin Connect data on swimming, running, weight training, and cycling. <br> Using the Pandas, Streamlit, Matplotlib libraries, etc."
+      },
       "competences": ["Python", "Streamlit", "CSV","Pandas"],
       "media": {
         "type": "video",
@@ -28,7 +40,10 @@
     {
       "id": 3,
       "titre": "Detecht",
-      "description": "Codage et déploiement d'un site statique pour un projet de 1ere année de classe préparatoire. <br> Utilisation de Netlify pour l'hébergement.",
+      "description": {
+        "fr": "Codage et déploiement d'un site statique pour un projet de 1ere année de classe préparatoire. <br> Utilisation de Netlify pour l'hébergement.",
+        "en" :"Coding and deployment of a static website for a first-year preparatory class project. <br> Use of Netlify for hosting."
+      },
       "competences": ["HTML", "CSS", "JavaScript"],
       "media": {
         "type": "image",
@@ -40,56 +55,86 @@
     },
     {
       "id": 4,
-      "titre": "Convertisseur YouTube",
-      "description": "Script python permettant de télécharger un audio, ou une vidéo, depuis un lien YouTube depuis le terminal. <br> Utilisation de la bibliothèque PyTube",
+      "titre":{
+        "fr": "Convertisseur YouTube",
+        "en" : "YouTube converter"
+      }, 
+      "description": {
+        "fr": "Script python permettant de télécharger un audio, ou une vidéo, depuis un lien YouTube depuis le terminal. <br> Utilisation de la bibliothèque PyTube",
+        "en":"Python script for downloading audio or video from a YouTube link from the terminal. <br> Using the PyTube library"
+      },
       "competences": ["Python", "Pytube"],
       "media": {
         "type": "image",
-        "url": "assets/img/projects/pytubeDL_hero.png"
+        "url": "assets/img/projects/pytube_hero.png"
       },
       "repository": "https://github.com/perazaf1/YT-Video-DL",
       "date": "2024-12"
     },
     {
       "id": 5,
-      "titre": "Bot discord Python",
-      "description": "Petit bot discord permettant de lire de la musique, de ban/ mute des membres... <br> Ce projet n'est actuellement pas sur GitHub et a été retiré de Discord.",
-      "competences": ["Python", "Discord" ],
+      "titre": {
+        "fr":"Bot Discord Python",
+        "en":"Python Discord bot"
+      },
+      "description": {
+        "fr":"Petit bot discord permettant de lire de la musique, de ban/ mute des membres... <br> Ce projet n'est actuellement pas sur GitHub et a été retiré de Discord.",
+        "en":"Small Discord bot that allows you to play music, ban/mute members, etc. <br> This project is not currently on GitHub and has been removed from Discord."
+      },
+      "competences": ["Python", "Discord","Heroku" ],
       "media": {
         "type": "image",
-        "url": "assets/img/projects/discord_hero.png"
+        "url": "assets/img/projects/discordpy_hero.png"
       },
       "lien": "",
       "date": "2021-09"
     },
     {
       "id": 6,
-      "titre": "Scripts d'automatisation",
-      "description": "Automatisation de connexion à des sites internet, comme Gmail, Discord, GitHub, Moodle. <br> Pour des raisons de confidentialité, le repo n'est pas accessible en ligne.",
+      "titre": {
+        "fr": "Scripts d'automatisation",
+        "en":"Automation Python scripts"
+      },
+      "description":{
+        "fr":"Automatisation de connexion à des sites internet, comme Gmail, Discord, GitHub, Moodle. <br> Pour des raisons de confidentialité, le repo n'est pas accessible en ligne.",
+        "en":"Automation of connections to websites such as Gmail, Discord, GitHub, and Moodle. <br> For privacy reasons, the repository is not accessible online."
+      }, 
       "competences": ["Python", "Selenium","Webdriver"],
       "media": {
         "type": "image",
-        "url": "assets/img/projects/automatisation_hero.png"
+        "url": "assets/img/projects/automatisationpy_hero.png"
       },
       "lien": "",
       "date": "2021-10"
     },
     {
       "id": 7,
-      "titre": "Bot discord JavaScript",
-      "description": "Petit bot discord permettant de lire de la musique, d'afficher des vidéos YouTube, de mute / ban. <br> Ce projet n'est actuellement pas sur GitHub et a été retiré de Discord. ",
-      "competences": ["JavaScript","Discord"],
+      "titre": {
+        "fr":"Bot Discord Javascript",
+        "en":"JavaScript Discord Bot"
+      },
+      "description": {
+        "fr": "Petit bot discord permettant de lire de la musique, d'afficher des vidéos YouTube, de mute / ban des membres. <br> Ce projet n'est actuellement pas sur GitHub et a été retiré de Discord. ",
+        "en":"Small Discord bot that allows you to play music, ban/mute members, etc. <br> This project is not currently on GitHub and has been removed from Discord."
+      },
+      "competences": ["JavaScript","Discord","Heroku"],
       "media": {
         "type": "image",
-        "url": "assets/img/projects/discord_hero.png"
+        "url": "assets/img/projects/discordjs_hero.png"
       },
       "lien": "",
       "date": "2021-04"
     },
     {
       "id": 7,
-      "titre": "Tamagotchi Python",
-      "description": "Jeu simulant 4 tamagotchis. <br> Projet académique de première année de cycle préparatoire. ",
+      "titre": {
+        "fr":"Tamagotchi Python",
+        "en":"Python Tamagotchis"
+      },
+      "description": {
+        "fr":"Jeu simulant 4 tamagotchis. <br> Projet académique de première année de cycle préparatoire. ",
+        "en":"Game simulating 4 Tamagotchis. Academic project for the first year of preparatory studies. "
+      },
       "competences": ["Python","Tkinter"],
       "media": {
         "type": "image",

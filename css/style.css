@@ -76,6 +76,11 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-body);
@@ -84,6 +89,9 @@ body {
   background-color: var(--color-bg-primary);
   line-height: 1.6;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 
@@ -103,6 +111,8 @@ body {
   display: flex;
   align-items: center;
   padding-top: 80px; /* Hauteur du header */
+  overflow: hidden;
+  position: relative;
 }
 
 .section__title {

@@ -2,17 +2,245 @@
   "fr": {
     "nav": {
       "home": "Accueil",
+      "education": "Formation",
       "projects": "Projets",
-      "about": "À propos",
+      "experience": "Expériences",
+      "skills": "Compétences",
       "contact": "Contact"
+    },
+    "hero": {
+      "subtitle": "Étudiant ingénieur passionné par la data et l'innovation",
+      "description": "Actuellement en première année du cycle ingénieur à l'ISEP, je développe mes compétences en ingénierie dans le domaine du numérique.",
+      "cta": {
+        "projects": "Découvrir mes projets",
+        "contact": "Me contacter"
+      }
+    },
+    "education": {
+      "title": "Formation",
+      "relevantCourses": "Cours pertinents",
+      "isep": {
+        "diploma": "Diplôme d'ingénieur",
+        "course1":"Mathématiques pour l'ingénieur",
+        "course2":"Télécommunications",
+        "course3":"Développement web",
+        "course4":"Machine Learning",
+        "course5":"Réseaux",
+        "course6":"Analyse des données",
+        "course7":"Cybersécurité"
+      },
+      "tampere": {
+        "diploma": "Niveau Bachelor 2",
+        "description": "Semestre Erasmus",
+        "course1":"Théorie des circuits",
+        "course2":"Télécommunications",
+        "course3":"Développement WEB",
+        "course4":"Design UI / UX",
+        "course5":"Supply chain management",
+        "course6":"Cours de leadership",
+        "course7":"Matrices et vecteurs"
+      },
+      "unisciel": {
+        "diploma": "Niveau L2",
+        "description": "Suivi en auditeur libre",
+        "course1":"Probabilités",
+        "course2":"Statistiques",
+        "course3":"Algèbre linéaire et matricielle",
+        "course4":"Analyse",
+        "course5":"Programmation Python"
+
+      },
+      "ndg": {
+        "diploma": "Diplôme du baccalauréat",
+        "description": "Baccalauréat général mention européenne",
+        "course1":"Mathématiques",
+        "course2":"Physique-Chimie",
+        "course3":"DNL Histoire",
+        "course4":"Option HGGSP en 1ère",
+        "course5":"B2 du Goethe Institut"
+
+      }
+    },
+    "projects": {
+      "title": "Projets",
+      "subtitle": "Mes réalisations personnelles et académiques"
+    },
+    "experience": {
+      "title": "Expériences",
+      "subtitle": "Mon parcours professionnel",
+      "mainMissions": "Missions principales",
+      "lacoste": {
+        "position": "Vendeur",
+        "period": "Juin 2025 - Août 2025",
+        "mission1": "Assurer un service client premium pendant des périodes de soldes",
+        "mission2": "Garder un environnement de travail irréprochable",
+        "mission3": "Être à l'écoute des clients",
+        "tag1": "Gestion du stress",
+        "tag2": "Travail d'équipe",
+        "tag3": "Service client"
+      },
+      "saviel": {
+        "position": "Opérateur de réception",
+        "period": "Juin 2024 - Août 2024",
+        "mission1": "Réception quotidienne de + de 25T de matières premières",
+        "mission2": "Gestion du stock de + de 200T d'aliments périssables",
+        "mission3": "Entretien des espaces communs",
+        "tag1": "Gestion du stock",
+        "tag2": "Travail d'équipe",
+        "tag3": "Logistique"
+      },
+      "tainois": {
+        "position": "Serveur",
+        "period": "Avril 2025",
+        "mission1": "Prendre et servir les commandes",
+        "mission2": "Tenir le bar et encaisser les clients",
+        "mission3": "Entretien des espaces communs",
+        "tag1": "Prise de commandes",
+        "tag2": "Travail d'équipe",
+        "tag3": "Service client"
+      },
+      "foncia": {
+        "position": "Employé polyvalent",
+        "period": "Juin 2023 - Juillet 2023",
+        "mission1": "Arrosage quotidien de + de 250 arbres",
+        "mission2": "Entretien des espaces communs",
+        "mission3": "Réparations liées à la plomberie",
+        "tag1": "Autonomie",
+        "tag2": "Travail d'équipe",
+        "tag3": "Respect des tâches"
+      }
+    },
+    "skills": {
+      "title": "Compétences"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Restons en contact",
+      "cta": "N'hésitez pas à me contacter pour plus d'informations"
+    },
+    "footer": {
+      "copyright": "© 2026 Paul-Emile Razafindrakoto. Tous droits réservés."
     }
   },
   "en": {
     "nav": {
       "home": "Home",
+      "education": "Education",
       "projects": "Projects",
-      "about": "About",
+      "experience": "Experience",
+      "skills": "Skills",
       "contact": "Contact"
+    },
+    "hero": {
+      "subtitle": "Engineering student passionate about data and innovation",
+      "description": "Currently in first year of engineering at ISEP, I am developing my engineering skills in the digital field.",
+      "cta": {
+        "projects": "Discover my projects",
+        "contact": "Contact me"
+      }
+    },
+    "education": {
+      "title": "Education",
+      "relevantCourses": "Relevant Courses",
+      "isep": {
+        "diploma": "Engineering Degree",
+        "course1":"Mathematics and physics for the engineer",
+        "course2":"Telecommunications",
+        "course3":"Web development",
+        "course4":"Machine Learning",
+        "course5":"Networks engineering",
+        "course6":"Data analysis",
+        "course7":"Cybersecurity"
+      },
+      "tampere": {
+        "diploma": "Bachelor year 2",
+        "description": "Erasmus Semester",
+        "course1":"Circuit and electronics theory",
+        "course2":"Telecommunications engineering",
+        "course3":"Web development",
+        "course4":"UI/ UX development",
+        "course5":"Supply chain management",
+        "course6":"Leadership course",
+        "course7":"Matrices and vectors"
+      },
+      "unisciel": {
+        "diploma": "Bachelor year 2",
+        "description": "Attending as a free auditor",
+        "course1":"Probability",
+        "course2":"Statistics",
+        "course3":"Linear and matrix algebra",
+        "course4":"Analysis",
+        "course5":"Python"
+      },
+      "ndg": {
+        "diploma": "High School Diploma",
+        "description": "General Baccalaureate with European mention",
+        "course1":"Mathematics",
+        "course2":"Physics and chemistry",
+        "course3":"Non-linguistic discipline : History (German course)",
+        "course4":"Geopolitics in 11th grade",
+        "course5":"B2-Level from Goethe Institut"
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "My personal and academic achievements"
+    },
+    "experience": {
+      "title": "Experience",
+      "subtitle": "My professional journey",
+      "mainMissions": "Main Missions",
+      "lacoste": {
+        "position": "Sales Associate",
+        "period": "June 2025 - August 2025",
+        "mission1": "Ensure premium customer service during sales periods",
+        "mission2": "Maintain an impeccable work environment",
+        "mission3": "Be attentive to customer needs",
+        "tag1": "Stress Management",
+        "tag2": "Teamwork",
+        "tag3": "Customer Service"
+      },
+      "saviel": {
+        "position": "Reception Operator",
+        "period": "June 2024 - August 2024",
+        "mission1": "Daily reception of over 25 tons of raw materials",
+        "mission2": "Stock management of over 200 tons of perishable food",
+        "mission3": "Maintenance of common areas",
+        "tag1": "Stock Management",
+        "tag2": "Teamwork",
+        "tag3": "Logistics"
+      },
+      "tainois": {
+        "position": "Waiter",
+        "period": "April 2025",
+        "mission1": "Take and serve orders",
+        "mission2": "Manage the bar and handle payments",
+        "mission3": "Maintain common areas",
+        "tag1": "Order Taking",
+        "tag2": "Teamwork",
+        "tag3": "Customer Service"
+      },
+      "foncia": {
+        "position": "General Employee",
+        "period": "June 2023 - July 2023",
+        "mission1": "Daily watering of over 250 trees",
+        "mission2": "Maintenance of common areas",
+        "mission3": "Plumbing-related repairs",
+        "tag1": "Autonomy",
+        "tag2": "Teamwork",
+        "tag3": "Task Compliance"
+      }
+    },
+    "skills": {
+      "title": "Skills"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Let's stay in touch",
+      "cta": "Feel free to contact me for more information"
+    },
+    "footer": {
+      "copyright": "© 2026 Paul-Emile Razafindrakoto. All rights reserved."
     }
   }
 }

@@ -140,6 +140,9 @@ async function loadProjects() {
 
     if (!projectsContainer) return;
 
+    // Récupérer la langue actuelle
+    const lang = localStorage.getItem('lang') || (navigator.language.startsWith('fr') ? 'fr' : 'en');
+
     // Trier les projets par date (plus récent en premier)
     const sortedProjects = data.projects.sort((a, b) => {
       return new Date(b.date) - new Date(a.date);
@@ -147,9 +150,14 @@ async function loadProjects() {
 
     // Générer le HTML pour chaque projet
     projectsContainer.innerHTML = sortedProjects.map(project => {
-      // Formater la date
+      // Récupérer le titre et la description selon la langue
+      const titre = typeof project.titre === 'object' ? project.titre[lang] : project.titre;
+      const description = typeof project.description === 'object' ? project.description[lang] : project.description;
+
+      // Formater la date selon la langue
       const date = new Date(project.date);
-      const formattedDate = date.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long' });
+      const locale = lang === 'fr' ? 'fr-FR' : 'en-US';
+      const formattedDate = date.toLocaleDateString(locale, { year: 'numeric', month: 'long' });
 
       // Générer le badge pour chaque compétence
       const competencesBadges = project.competences.map(comp =>
@@ -160,21 +168,25 @@ async function loadProjects() {
       const mediaHTML = project.media.type === 'video'
         ? `<video class="project-card__media" controls>
              <source src="${project.media.url}" type="video/mp4">
-             Votre navigateur ne supporte pas la lecture de vidéos.
+             ${lang === 'fr' ? 'Votre navigateur ne supporte pas la lecture de vidéos.' : 'Your browser does not support video playback.'}
            </video>`
-        : `<img src="${project.media.url}" alt="${project.titre}" class="project-card__media">`;
+        : `<img src="${project.media.url}" alt="${titre}" class="project-card__media">`;
+
+      // Textes traduits pour les liens
+      const viewProjectText = lang === 'fr' ? 'Voir le projet' : 'View project';
+      const viewRepoText = lang === 'fr' ? 'Voir le repo' : 'View repo';
 
       // Générer le lien si présent
       const linkHTML = project.lien
         ? `<a href="${project.lien}" target="_blank" rel="noopener noreferrer" class="project-card__link">
-             <i class="fa-solid fa-arrow-up-right-from-square"></i> Voir le projet
+             <i class="fa-solid fa-arrow-up-right-from-square"></i> ${viewProjectText}
            </a>`
         : '';
 
       // Générer le lien repository
       const linkREPO = project.repository
         ? `<a href="${project.repository}" target="_blank" rel="noopener noreferrer" class="project-card__repo">
-             <i class="fa-brands fa-github"></i> Voir le repo
+             <i class="fa-brands fa-github"></i> ${viewRepoText}
            </a>`
         : '';
 
@@ -193,10 +205,10 @@ async function loadProjects() {
           </div>
           <div class="project-card__content">
             <div class="project-card__header">
-              <h3 class="project-card__title">${project.titre}</h3>
+              <h3 class="project-card__title">${titre}</h3>
               <span class="project-card__date">${formattedDate}</span>
             </div>
-            <p class="project-card__description">${project.description}</p>
+            <p class="project-card__description">${description}</p>
             <div class="project-card__competences">
               ${competencesBadges}
             </div>

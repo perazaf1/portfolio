@@ -17,26 +17,29 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#home" class="nav__logo">P-E.R</a>
+                <!-- <a href="#home" class="nav__logo">P-E.R</a> -->
 
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link nav__link--active">Accueil</a>
+                        <a href="#home" class="nav__link nav__link--active" data-i18n="nav.home">Accueil</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#education" class="nav__link">Formation</a>
+                        <a href="#education" class="nav__link" data-i18n="nav.education">Formation</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projets</a>
+                        <a href="#projects" class="nav__link" data-i18n="nav.projects">Projets</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#experience" class="nav__link">Expériences</a>
+                        <a href="#experience" class="nav__link" data-i18n="nav.experience">Expériences</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">Compétences</a>
+                        <a href="#skills" class="nav__link" data-i18n="nav.skills">Compétences</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a>
+                        <a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <button id="lang-switch" class="nav__lang-btn">EN</button>
                     </li>
                 </ul>
 
@@ -61,16 +64,16 @@
                             <span class="hero__title-highlight">Paul-Emile</span><br>
                             Razafindrakoto
                         </h1>
-                        <p class="hero__subtitle">
+                        <p class="hero__subtitle" data-i18n="hero.subtitle">
                             Étudiant ingénieur passionné par la data et l'innovation
                         </p>
-                        <p class="hero__description">
+                        <p class="hero__description" data-i18n="hero.description">
                             Actuellement en première année du cycle ingénieur à l'ISEP, je développe mes compétences en
                             ingénierie dans le domaine du numérique.
                         </p>
                         <div class="hero__cta">
-                            <a href="#projects" class="btn btn--primary">Découvrir mes projets</a>
-                            <a href="#contact" class="btn btn--secondary">Me contacter</a>
+                            <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.projects">Découvrir mes projets</a>
+                            <a href="#contact" class="btn btn--secondary" data-i18n="hero.cta.contact">Me contacter</a>
                         </div>
                     </div>
 
@@ -90,7 +93,7 @@
         <!-- SECTION FORMATION -->
         <section id="education" class="section">
             <div class="container">
-                <h2 class="section__title">Formation</h2>
+                <h2 class="section__title" data-i18n="education.title">Formation</h2>
 
                 <div class="education">
                     <div class="education__timeline">
@@ -98,23 +101,23 @@
                         <div class="education__timeline-item">
                             <div class="education__timeline-item__marker"></div>
                             <div class="education__timeline-item__content">
-                                <h3 class="education__timeline-item__title">ISEP Paris - en cours</h3>
+                                <h3 class="education__timeline-item__title">ISEP Paris</h3>
                                 <img class="education__timeline-item__logo" src="assets/img/logos/isep_logo.png"
                                     alt="Logo ISEP">
                                 <span class="education__timeline-item__date">09/2023 - 07/2028</span>
                                 <span class="education__timeline-item__location"><i
                                         class="fa-solid fa-location-dot"></i>Paris, FRANCE</span>
                                 <span class="education__timeline-item__diploma"><i
-                                        class="fa-solid fa-graduation-cap"></i>Diplôme d'ingénieur</span>
-                                <h4 class="education__timeline-item__subtitle">Cours pertinents</h4>
+                                        class="fa-solid fa-graduation-cap"></i><span data-i18n="education.isep.diploma">Diplôme d'ingénieur</span></span>
+                                <h4 class="education__timeline-item__subtitle" data-i18n="education.relevantCourses">Cours pertinents</h4>
                                 <ul class="education__timeline-item__list">
-                                    <li>Mathématiques pour l'ingénieur</li>
-                                    <li>Télécommunications</li>
-                                    <li>Développement WEB</li>
-                                    <li>Introduction au machine learning</li>
-                                    <li>Réseaux</li>
-                                    <li>Analyse des données</li>
-                                    <li>Cybersécurité</li>
+                                    <li data-i18n="education.isep.course1" >Mathématiques pour l'ingénieur</li>
+                                    <li data-i18n="education.isep.course2">Télécommunications</li>
+                                    <li data-i18n="education.isep.course3">Développement WEB</li>
+                                    <li data-i18n="education.isep.course4">Introduction au machine learning</li>
+                                    <li data-i18n="education.isep.course5">Réseaux</li>
+                                    <li data-i18n="education.isep.course6">Analyse des données</li>
+                                    <li data-i18n="education.isep.course7">Cybersécurité</li>
                                 </ul>
                             </div>
                         </div>
@@ -129,16 +132,17 @@
                                 <span class="education__timeline-item__location"><i
                                         class="fa-solid fa-location-dot"></i>Tampere, FINLANDE</span>
                                 <span class="education__timeline-item__diploma"><i
-                                        class="fa-solid fa-graduation-cap"></i>Niveau Bachelor 2</span>
-                                <p class="education__timeline-item__description">Semestre Eramsus</p>
-                                <h4 class="education__timeline-item__subtitle">Cours pertinents</h4>
+                                        class="fa-solid fa-graduation-cap"></i><span data-i18n="education.tampere.diploma">Niveau Bachelor 2</span></span>
+                                <p class="education__timeline-item__description" data-i18n="education.tampere.description">Semestre Eramsus</p>
+                                <h4 class="education__timeline-item__subtitle" data-i18n="education.relevantCourses">Cours pertinents</h4>
                                 <ul class="education__timeline-item__list">
-                                    <li>Théorie des circuits</li>
-                                    <li>Télécommunications</li>
-                                    <li>Développement WEB</li>
-                                    <li>Design UI / UX</li>
-                                    <li>Supply chain management</li>
-                                    <li>Cours de leadership</li>
+                                    <li data-i18n="education.tampere.course1">Théorie des circuits</li>
+                                    <li data-i18n="education.tampere.course2">Télécommunications</li>
+                                    <li data-i18n="education.tampere.course3">Développement WEB</li>
+                                    <li data-i18n="education.tampere.course4">Design UI / UX</li>
+                                    <li data-i18n="education.tampere.course5">Supply chain management</li>
+                                    <li data-i18n="education.tampere.course6">Cours de leadership</li>
+                                    <li data-i18n="education.tampere.course7">Matrices et vecteurs</li>
                                 </ul>
                             </div>
                         </div>
@@ -153,16 +157,17 @@
                                 <span class="education__timeline-item__location"><i
                                         class="fa-solid fa-location-dot"></i>A distance</span>
                                 <span class="education__timeline-item__diploma"><i
-                                        class="fa-solid fa-graduation-cap"></i>Niveau L2</span>
-                                <p class="education__timeline-item__description">
+                                        class="fa-solid fa-graduation-cap"></i><span data-i18n="education.unisciel.diploma">Niveau L2</span></span>
+                                <p class="education__timeline-item__description" data-i18n="education.unisciel.description">
                                     Suivi en auditeur libre
                                 </p>
-                                <h4 class="education__timeline-item__subtitle">Cours pertinents</h4>
+                                <h4 class="education__timeline-item__subtitle" data-i18n="education.relevantCourses">Cours pertinents</h4>
                                 <ul class="education__timeline-item__list">
-                                    <li>Probabilités</li>
-                                    <li>Statistiques</li>
-                                    <li>Algèbre linéaire et matricielle</li>
-                                    <li>Analyse</li>
+                                    <li data-i18n="education.unisciel.course1">Probabilités</li>
+                                    <li data-i18n="education.unisciel.course2">Statistiques</li>
+                                    <li data-i18n="education.unisciel.course3">Algèbre linéaire et matricielle</li>
+                                    <li data-i18n="education.unisciel.course4">Analyse</li>
+                                    <li data-i18n="education.unisciel.course5">Programmation Python</li>
                                 </ul>
                             </div>
                         </div>
@@ -177,15 +182,16 @@
                                 <span class="education__timeline-item__location"><i
                                         class="fa-solid fa-location-dot"></i>Versailles, FRANCE</span>
                                 <span class="education__timeline-item__diploma"><i
-                                        class="fa-solid fa-graduation-cap"></i>Diplôme du baccalauréat</span>
-                                <p class="education__timeline-item__description">
+                                        class="fa-solid fa-graduation-cap"></i><span data-i18n="education.ndg.diploma">Diplôme du baccalauréat</span></span>
+                                <p class="education__timeline-item__description" data-i18n="education.ndg.description">
                                     Baccalauréat général mention européenne
                                 </p>
                                 <ul class="education__timeline-item__list">
-                                    <li>Mathématiques</li>
-                                    <li>Physique-Chimie</li>
-                                    <li>DNL Histoire</li>
-                                    <li>Option HGGSP en 1ère</li>
+                                    <li data-i18n="education.ndg.course1">Mathématiques</li>
+                                    <li data-i18n="education.ndg.course2">Physique-Chimie</li>
+                                    <li data-i18n="education.ndg.course3">DNL Histoire</li>
+                                    <li data-i18n="education.ndg.course4">Option HGGSP en 1ère</li>
+                                    <li data-i18n="education.ndg.course5">B2 Goethe Institut</li>
                                 </ul>
                             </div>
                         </div>
@@ -199,8 +205,8 @@
         <!-- SECTION PROJETS -->
         <section id="projects" class="section section--alt">
             <div class="container">
-                <h2 class="section__title">Projets</h2>
-                <p class="section__subtitle">Mes réalisations personnelles et académiques</p>
+                <h2 class="section__title" data-i18n="projects.title">Projets</h2>
+                <p class="section__subtitle" data-i18n="projects.subtitle">Mes réalisations personnelles et académiques</p>
 
                 <div class="projects">
                     
@@ -211,8 +217,8 @@
         <!-- SECTION EXPÉRIENCES -->
         <section id="experience" class="section">
             <div class="container">
-                <h2 class="section__title">Expériences</h2>
-                <p class="section__subtitle">Mon parcours professionnel</p>
+                <h2 class="section__title" data-i18n="experience.title">Expériences</h2>
+                <p class="section__subtitle" data-i18n="experience.subtitle">Mon parcours professionnel</p>
 
                 <div class="experiences">
 
@@ -223,26 +229,26 @@
                                     alt="Logo Lacoste">
                                 <div class="experience-card__info">
                                     <h3 class="experience-card__company">Lacoste</h3>
-                                    <p class="experience-card__position">Vendeur</p>
+                                    <p class="experience-card__position" data-i18n="experience.lacoste.position">Vendeur</p>
                                 </div>
                             </div>
                             <span class="experience-card__icon">+</span>
                         </button>
 
                         <div class="experience-card__body">
-                            <p class="experience-card__period">Juin 2025 - Août 2025</p>
+                            <p class="experience-card__period" data-i18n="experience.lacoste.period">Juin 2025 - Août 2025</p>
 
-                            <h4 class="experience-card__subtitle">Missions principales</h4>
+                            <h4 class="experience-card__subtitle" data-i18n="experience.mainMissions">Missions principales</h4>
                             <ul class="experience-card__list">
-                                <li class="experience-card__item">Assurer un service client premium pendant des périodes de soldes</li>
-                                <li class="experience-card__item">Garder un environnnement de travail irréprochable</li>
-                                <li class="experience-card__item">Etre à l'écoute des clients</li>
+                                <li class="experience-card__item" data-i18n="experience.lacoste.mission1">Assurer un service client premium pendant des périodes de soldes</li>
+                                <li class="experience-card__item" data-i18n="experience.lacoste.mission2">Garder un environnnement de travail irréprochable</li>
+                                <li class="experience-card__item" data-i18n="experience.lacoste.mission3">Etre à l'écoute des clients</li>
                             </ul>
 
                             <div class="experience-card__tags">
-                                <span class="experience-card__tag">Gestion du stress</span>
-                                <span class="experience-card__tag">Travail d'équipe</span>
-                                <span class="experience-card__tag">Service client</span>
+                                <span class="experience-card__tag" data-i18n="experience.lacoste.tag1">Gestion du stress</span>
+                                <span class="experience-card__tag" data-i18n="experience.lacoste.tag2">Travail d'équipe</span>
+                                <span class="experience-card__tag" data-i18n="experience.lacoste.tag3">Service client</span>
                             </div>
                         </div>
                     </article>
@@ -254,26 +260,26 @@
                                     alt="Logo Lacoste">
                                 <div class="experience-card__info">
                                     <h3 class="experience-card__company">Saviel Agromousquetaires</h3>
-                                    <p class="experience-card__position">Opérateur de réception</p>
+                                    <p class="experience-card__position" data-i18n="experience.saviel.position">Opérateur de réception</p>
                                 </div>
                             </div>
                             <span class="experience-card__icon">+</span>
                         </button>
 
                         <div class="experience-card__body">
-                            <p class="experience-card__period">Juin 2024 - Août 2024</p>
+                            <p class="experience-card__period" data-i18n="experience.saviel.period">Juin 2024 - Août 2024</p>
 
-                            <h4 class="experience-card__subtitle">Missions principales</h4>
+                            <h4 class="experience-card__subtitle" data-i18n="experience.mainMissions">Missions principales</h4>
                             <ul class="experience-card__list">
-                                <li class="experience-card__item">Réception quotidienne de + de 25T de matières premières</li>
-                                <li class="experience-card__item">Gestion du stock de + de 200T d'aliments périssables</li>
-                                <li class="experience-card__item">Entretien des espaces communs</li>
+                                <li class="experience-card__item" data-i18n="experience.saviel.mission1">Réception quotidienne de + de 25T de matières premières</li>
+                                <li class="experience-card__item" data-i18n="experience.saviel.mission2">Gestion du stock de + de 200T d'aliments périssables</li>
+                                <li class="experience-card__item" data-i18n="experience.saviel.mission3">Entretien des espaces communs</li>
                             </ul>
 
                             <div class="experience-card__tags">
-                                <span class="experience-card__tag">Gestion du stock</span>
-                                <span class="experience-card__tag">Travail d'équipe</span>
-                                <span class="experience-card__tag">Logistique</span>
+                                <span class="experience-card__tag" data-i18n="experience.saviel.tag1">Gestion du stock</span>
+                                <span class="experience-card__tag" data-i18n="experience.saviel.tag2">Travail d'équipe</span>
+                                <span class="experience-card__tag" data-i18n="experience.saviel.tag3">Logistique</span>
                             </div>
                         </div>
                     </article>
@@ -285,26 +291,26 @@
                                     alt="Logo Lacoste">
                                 <div class="experience-card__info">
                                     <h3 class="experience-card__company">Le Tainois</h3>
-                                    <p class="experience-card__position">Serveur</p>
+                                    <p class="experience-card__position" data-i18n="experience.tainois.position">Serveur</p>
                                 </div>
                             </div>
                             <span class="experience-card__icon">+</span>
                         </button>
 
                         <div class="experience-card__body">
-                            <p class="experience-card__period">Avril 2025</p>
+                            <p class="experience-card__period" data-i18n="experience.tainois.period">Avril 2025</p>
 
-                            <h4 class="experience-card__subtitle">Missions principales</h4>
+                            <h4 class="experience-card__subtitle" data-i18n="experience.mainMissions">Missions principales</h4>
                             <ul class="experience-card__list">
-                                <li class="experience-card__item">Prendre et servir les commandes</li>
-                                <li class="experience-card__item">Tenir le bar et encaisser les clients</li>
-                                <li class="experience-card__item">Entretien des espaces communs</li>
+                                <li class="experience-card__item" data-i18n="experience.tainois.mission1">Prendre et servir les commandes</li>
+                                <li class="experience-card__item" data-i18n="experience.tainois.mission2">Tenir le bar et encaisser les clients</li>
+                                <li class="experience-card__item" data-i18n="experience.tainois.mission3">Entretien des espaces communs</li>
                             </ul>
 
                             <div class="experience-card__tags">
-                                <span class="experience-card__tag">Prise de commandes</span>
-                                <span class="experience-card__tag">Travail d'équipe</span>
-                                <span class="experience-card__tag">Service client</span>
+                                <span class="experience-card__tag" data-i18n="experience.tainois.tag1">Prise de commandes</span>
+                                <span class="experience-card__tag" data-i18n="experience.tainois.tag2">Travail d'équipe</span>
+                                <span class="experience-card__tag" data-i18n="experience.tainois.tag3">Service client</span>
                             </div>
                         </div>
                     </article>
@@ -316,26 +322,26 @@
                                     alt="Logo Lacoste">
                                 <div class="experience-card__info">
                                     <h3 class="experience-card__company">Foncia Rive Droite</h3>
-                                    <p class="experience-card__position">Employé polyvalent</p>
+                                    <p class="experience-card__position" data-i18n="experience.foncia.position">Employé polyvalent</p>
                                 </div>
                             </div>
                             <span class="experience-card__icon">+</span>
                         </button>
 
                         <div class="experience-card__body">
-                            <p class="experience-card__period">Juin 2023 - Juillet 2023</p>
+                            <p class="experience-card__period" data-i18n="experience.foncia.period">Juin 2023 - Juillet 2023</p>
 
-                            <h4 class="experience-card__subtitle">Missions principales</h4>
+                            <h4 class="experience-card__subtitle" data-i18n="experience.mainMissions">Missions principales</h4>
                             <ul class="experience-card__list">
-                                <li class="experience-card__item">Arrosage quotidien de + de 250 arbres</li>
-                                <li class="experience-card__item">Entretien des espaces communs</li>
-                                <li class="experience-card__item">Réparation liées à la plomberie</li>
+                                <li class="experience-card__item" data-i18n="experience.foncia.mission1">Arrosage quotidien de + de 250 arbres</li>
+                                <li class="experience-card__item" data-i18n="experience.foncia.mission2">Entretien des espaces communs</li>
+                                <li class="experience-card__item" data-i18n="experience.foncia.mission3">Réparation liées à la plomberie</li>
                             </ul>
 
                             <div class="experience-card__tags">
-                                <span class="experience-card__tag">Autonomie</span>
-                                <span class="experience-card__tag">Travail d'équipe</span>
-                                <span class="experience-card__tag">Respect des tâches</span>
+                                <span class="experience-card__tag" data-i18n="experience.foncia.tag1">Autonomie</span>
+                                <span class="experience-card__tag" data-i18n="experience.foncia.tag2">Travail d'équipe</span>
+                                <span class="experience-card__tag" data-i18n="experience.foncia.tag3">Respect des tâches</span>
                             </div>
                         </div>
                     </article>
@@ -348,7 +354,7 @@
         <!-- SECTION COMPÉTENCES -->
         <section id="skills" class="section section--alt">
             <div class="container">
-                <h2 class="section__title">Compétences</h2>
+                <h2 class="section__title" data-i18n="skills.title">Compétences</h2>
 
 
                 <div class="skills-grid">
@@ -403,8 +409,8 @@
         <!-- SECTION CONTACT -->
         <section id="contact" class="section">
             <div class="container">
-                <h2 class="section__title">Contact</h2>
-                <p class="section__subtitle">Restons en contact</p>
+                <h2 class="section__title" data-i18n="contact.title">Contact</h2>
+                <p class="section__subtitle" data-i18n="contact.subtitle">Restons en contact</p>
 
                 <div class="contact">
                     <div class="contact__links">
@@ -430,7 +436,7 @@
                         </a>
                     </div>
 
-                    <p class="contact__cta">
+                    <p class="contact__cta" data-i18n="contact.cta">
                         N'hésitez pas à me contacter pour plus d'informations
                     </p>
                 </div>
@@ -440,7 +446,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="footer__text">© 2026 Paul-Emile Razafindrakoto. Tous droits réservés.</p>
+            <p class="footer__text" data-i18n="footer.copyright">© 2026 Paul-Emile Razafindrakoto. Tous droits réservés.</p>
         </div>
     </footer>
 

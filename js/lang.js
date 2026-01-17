@@ -22,6 +22,10 @@ document.addEventListener("click", e => {
     currentLang = currentLang === "fr" ? "en" : "fr";
     localStorage.setItem("lang", currentLang);
     loadLang();
+    // Recharger les projets avec la nouvelle langue
+    if (typeof loadProjects === 'function') {
+      loadProjects();
+    }
   }
 });
 

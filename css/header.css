@@ -34,6 +34,8 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--spacing-md) 0;
+  width: 100%;
+  position: relative;
 }
 
 /* Logo */
@@ -91,6 +93,31 @@
 
 .nav__link--active {
   color: var(--color-primary);
+}
+
+/* Bouton de changement de langue */
+.nav__lang-btn {
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav__lang-btn:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav__lang-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Menu burger */
