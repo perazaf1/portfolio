@@ -1,0 +1,102 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "titre": "Dormquest",
+      "description": "Site web réalisé dans le cadre académique : le but est de permettre aux étudiants de trouver leur logements de la manière la plus simple possible ! <br> 120h de travail encadrées <br> 50h de travail personnel",
+      "competences": ["HTML", "CSS", "JavaScript", "PHP","SQL"],
+      "media": {
+        "type": "image",
+        "url": "assets/img/projects/dormquest_hero.png"
+      },
+      "lien": "dormquest.fr",
+      "repository" : "https://github.com/perazaf1/dormquestV2",
+      "date": "2025-10"
+    },
+    {
+      "id": 2,
+      "titre": "AthletIQ",
+      "description": "Projet d'analyse de mes données Garmin Connect, de natation, course à pied, musculation et de vélo. <br> Utilisation des librairies Pandas, Streamlit, Matplotlib... ",
+      "competences": ["Python", "Streamlit", "CSV","Pandas"],
+      "media": {
+        "type": "video",
+        "url": "assets/videos/athletiqIQ_demo.mp4"
+      },
+      "repository": "https://github.com/perazaf1/athletiQ",
+      "date": "2025-10"
+    },
+    {
+      "id": 3,
+      "titre": "Detecht",
+      "description": "Codage et déploiement d'un site statique pour un projet de 1ere année de classe préparatoire. <br> Utilisation de Netlify pour l'hébergement.",
+      "competences": ["HTML", "CSS", "JavaScript"],
+      "media": {
+        "type": "image",
+        "url": "assets/img/projects/detecht_hero.png"
+      },
+      "lien":"https://detecht.netlify.app/",
+      "repository": "https://github.com/perazaf1/Detecht",
+      "date": "2023-09"
+    },
+    {
+      "id": 4,
+      "titre": "Convertisseur YouTube",
+      "description": "Script python permettant de télécharger un audio, ou une vidéo, depuis un lien YouTube depuis le terminal. <br> Utilisation de la bibliothèque PyTube",
+      "competences": ["Python", "Pytube"],
+      "media": {
+        "type": "image",
+        "url": "assets/img/projects/pytubeDL_hero.png"
+      },
+      "repository": "https://github.com/perazaf1/YT-Video-DL",
+      "date": "2024-12"
+    },
+    {
+      "id": 5,
+      "titre": "Bot discord Python",
+      "description": "Petit bot discord permettant de lire de la musique, de ban/ mute des membres... <br> Ce projet n'est actuellement pas sur GitHub et a été retiré de Discord.",
+      "competences": ["Python", "Discord" ],
+      "media": {
+        "type": "image",
+        "url": "assets/img/projects/discord_hero.png"
+      },
+      "lien": "",
+      "date": "2021-09"
+    },
+    {
+      "id": 6,
+      "titre": "Scripts d'automatisation",
+      "description": "Automatisation de connexion à des sites internet, comme Gmail, Discord, GitHub, Moodle. <br> Pour des raisons de confidentialité, le repo n'est pas accessible en ligne.",
+      "competences": ["Python", "Selenium","Webdriver"],
+      "media": {
+        "type": "image",
+        "url": "assets/img/projects/automatisation_hero.png"
+      },
+      "lien": "",
+      "date": "2021-10"
+    },
+    {
+      "id": 7,
+      "titre": "Bot discord JavaScript",
+      "description": "Petit bot discord permettant de lire de la musique, d'afficher des vidéos YouTube, de mute / ban. <br> Ce projet n'est actuellement pas sur GitHub et a été retiré de Discord. ",
+      "competences": ["JavaScript","Discord"],
+      "media": {
+        "type": "image",
+        "url": "assets/img/projects/discord_hero.png"
+      },
+      "lien": "",
+      "date": "2021-04"
+    },
+    {
+      "id": 7,
+      "titre": "Tamagotchi Python",
+      "description": "Jeu simulant 4 tamagotchis. <br> Projet académique de première année de cycle préparatoire. ",
+      "competences": ["Python","Tkinter"],
+      "media": {
+        "type": "image",
+        "url": "https://github.com/perazaf1/tamagotchi-game/assets/80415605/af938607-1de6-4da8-8e10-45612c8eb5aa"
+      },
+      "repository": "https://github.com/perazaf1/tamagotchi-game",
+      "date": "2024-06"
+    }
+  ]
+}
