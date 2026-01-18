@@ -30,6 +30,7 @@
         "course7":"Cybersécurité"
       },
       "tampere": {
+        "location":"Tampere,FINLANDE",
         "diploma": "Niveau Bachelor 2",
         "description": "Semestre Erasmus",
         "course1":"Théorie des circuits",
@@ -42,6 +43,7 @@
       },
       "unisciel": {
         "diploma": "Niveau L2",
+        "location":"A distance",
         "description": "Suivi en auditeur libre",
         "course1":"Probabilités",
         "course2":"Statistiques",
@@ -154,6 +156,7 @@
       },
       "tampere": {
         "diploma": "Bachelor year 2",
+        "location":"Tampere,FINLAND",
         "description": "Erasmus Semester",
         "course1":"Circuit and electronics theory",
         "course2":"Telecommunications engineering",
@@ -165,6 +168,7 @@
       },
       "unisciel": {
         "diploma": "Bachelor year 2",
+        "location":"Distance learning",
         "description": "Attending as a free auditor",
         "course1":"Probability",
         "course2":"Statistics",
